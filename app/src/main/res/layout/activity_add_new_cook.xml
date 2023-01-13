@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AddNewCook">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     >
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_layout"
+            android:layout_marginBottom="3dp"
+            android:orientation="vertical">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/add_master_image"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        app:civ_border_width="2dp"
+        android:elevation="8dp"
+        app:civ_border_color="@android:color/darker_gray"
+        android:src="@drawable/add_image"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="Tap above to select your image" />
+
+</LinearLayout>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@drawable/rounded_layout"
+     android:layout_marginBottom="3dp"
+     android:orientation="vertical">
+
+
+
+    <EditText
+        android:id="@+id/add_cook_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:elevation="3dp"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:hint="Your Name"
+        android:textColorHint="@color/colorLightBlack"
+        android:textColor="@color/black"
+        android:background="@drawable/edittext_rc"
+        android:backgroundTint="@color/purple_500"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:cursorVisible="true"
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:id="@+id/add_cook_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:elevation="3dp"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:hint="Your Working Place"
+        android:textColorHint="@color/colorLightBlack"
+        android:textColor="@color/black"
+
+        android:background="@drawable/edittext_rc"
+        android:backgroundTint="@color/purple_500"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:cursorVisible="true"
+        android:inputType="textPersonName"
+        />
+     <EditText
+         android:id="@+id/add_cook_cost"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:ems="10"
+         android:elevation="3dp"
+         android:layout_margin="16dp"
+         android:padding="8dp"
+         android:textColorHint="@color/colorLightBlack"
+         android:hint="Charge Per Month per person"
+         android:maxLength="4"
+         android:textColor="@color/black"
+         android:background="@drawable/edittext_rc"
+         android:backgroundTint="@color/purple_500"
+         android:textCursorDrawable="@drawable/color_cursor"
+         android:cursorVisible="true"
+         android:inputType="number"
+         />
+
+
+     <EditText
+         android:id="@+id/cook_description"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="16dp"
+         android:background="@drawable/edittext_rc"
+         android:backgroundTint="@color/purple_500"
+         android:cursorVisible="true"
+         android:elevation="3dp"
+         android:ems="10"
+         android:hint="Describe your cooking experience in detail"
+         android:textColorHint="@color/colorLightBlack"
+         android:inputType="textMultiLine"
+         android:padding="8dp"
+         android:scrollbars="vertical"
+         android:textColor="@color/black"
+         android:textCursorDrawable="@drawable/color_cursor" />
+ </LinearLayout>
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_layout"
+            android:layout_marginBottom="3dp"
+            android:orientation="vertical">
+    <EditText
+        android:id="@+id/add_cook_primary_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:elevation="3dp"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:hint="Your primary/whatsapp number"
+        android:textColorHint="@color/colorLightBlack"
+        android:maxLength="10"
+        android:textColor="@color/black"
+        android:background="@drawable/edittext_rc"
+        android:backgroundTint="@color/purple_500"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:cursorVisible="true"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/add_cook_secondary_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:elevation="3dp"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:hint="Your secondary number"
+        android:textColorHint="@color/colorLightBlack"
+        android:maxLength="10"
+        android:textColor="@color/black"
+        android:background="@drawable/edittext_rc"
+        android:backgroundTint="@color/purple_500"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:cursorVisible="true"
+        android:inputType="number"
+        />
+    </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/rounded_layout"
+         android:layout_marginBottom="3dp"
+         android:orientation="vertical">
+         <TextView
+             android:id="@+id/textView7"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="start"
+             android:textColor="@color/black"
+             android:layout_margin="16dp"
+             android:textSize="17sp"
+             android:text="Select yes if your charge can be negotiated" />
+         <Spinner
+             android:id="@+id/negotiable_spinner"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/edittext_rc"
+             android:backgroundTint="@color/purple_500"
+             android:textColor="@color/black"
+             android:ems="10"
+             android:elevation="3dp"
+             android:layout_margin="16dp"
+             android:padding="15dp"
+             />
+     </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_layout"
+            android:layout_marginBottom="3dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:layout_margin="16dp"
+                android:textSize="17sp"
+                android:text="Select yes if you can cook non-veg item" />
+     <Spinner
+         android:id="@+id/cookNonVeg_spinner"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/edittext_rc"
+         android:backgroundTint="@color/purple_500"
+         android:textColor="@color/black"
+         android:ems="10"
+         android:elevation="3dp"
+         android:layout_margin="16dp"
+         android:padding="15dp"
+
+         />
+        </LinearLayout>
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/rounded_layout"
+             android:layout_marginBottom="3dp"
+             android:orientation="vertical">
+             <TextView
+                 android:id="@+id/textView5"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="16dp"
+                 android:textSize="17sp"
+                 android:gravity="start"
+                 android:textColor="@color/black"
+                 android:text="Which vegetarian dishes you can make" />
+
+             <EditText
+                 android:id="@+id/add_cook_veg_dish"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="16dp"
+                 android:background="@drawable/edittext_rc"
+                 android:backgroundTint="@color/purple_500"
+                 android:cursorVisible="true"
+                 android:elevation="3dp"
+                 android:ems="10"
+                 android:hint="Enter dish name"
+                 android:textColorHint="@color/colorLightBlack"
+                 android:inputType="textMultiLine"
+                 android:padding="8dp"
+                 android:textColor="@color/black"
+                 android:textCursorDrawable="@drawable/color_cursor" />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/rounded_layout"
+             android:orientation="vertical">
+             <TextView
+                 android:id="@+id/textView6"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="16dp"
+                 android:textSize="17sp"
+                 android:gravity="start"
+                 android:textColor="@color/black"
+                 android:text="Which non-vegetarian dishes you can make" />
+
+             <EditText
+                 android:id="@+id/add_cook_non_veg_dish"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="16dp"
+                 android:background="@drawable/edittext_rc"
+                 android:backgroundTint="@color/purple_500"
+                 android:cursorVisible="true"
+                 android:elevation="3dp"
+                 android:ems="10"
+                 android:hint="Enter dish name"
+                 android:textColorHint="@color/colorLightBlack"
+                 android:inputType="textMultiLine"
+                 android:padding="8dp"
+                 android:textColor="@color/black"
+                 android:textCursorDrawable="@drawable/color_cursor" />
+         </LinearLayout>
+
+        </LinearLayout>
+    <Button
+        android:id="@+id/add_new_cook_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_rc"
+        android:elevation="5dp"
+        android:text="add"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

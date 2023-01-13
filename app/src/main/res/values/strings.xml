@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FInd-Cook</string>
+
+
+    <string-array name="can_cook_nonVeg">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="price_negotiation">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
